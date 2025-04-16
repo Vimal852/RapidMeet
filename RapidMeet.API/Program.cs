@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using RapidMeet.API.SignalR;
 using RapidMeet.Application.Interfaces;
 using RapidMeet.Infrastructure.Data;
 using RapidMeet.Infrastructure.Services;
@@ -21,12 +22,16 @@ builder.Services.AddScoped<IMeetingService, MeetingService>();
 builder.Services.AddScoped<IParticipantService, ParticipantService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 
-
+builder.Services.AddSignalR();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient("RapidMeetAPI", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5001"); 
+});
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -59,6 +64,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 app.UseHttpsRedirection();
+
+app.MapHub<MeetingHub>("/hubs/meeting");
 
 app.MapControllers();
 

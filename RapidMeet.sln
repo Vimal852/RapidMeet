@@ -3,21 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidMeet.Domain", "RapidMeet.Domain\RapidMeet.Domain.csproj", "{C75CD07F-6235-4C96-B56E-0D6EE85A95EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidMeet.Domain", "RapidMeet.Domain\RapidMeet.Domain.csproj", "{C75CD07F-6235-4C96-B56E-0D6EE85A95EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidMeet.Application", "RapidMeet.Application\RapidMeet.Application.csproj", "{CFB04BDD-71DD-453C-A9C1-245296FAA82C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidMeet.Application", "RapidMeet.Application\RapidMeet.Application.csproj", "{CFB04BDD-71DD-453C-A9C1-245296FAA82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidMeet.Infrastructure", "RapidMeet.Infrastructure\RapidMeet.Infrastructure.csproj", "{81FEADC0-EC2D-4C3D-98DF-74A73BD7DE3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidMeet.Infrastructure", "RapidMeet.Infrastructure\RapidMeet.Infrastructure.csproj", "{81FEADC0-EC2D-4C3D-98DF-74A73BD7DE3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidMeet.API", "RapidMeet.API\RapidMeet.API.csproj", "{B3265E38-2E27-47E5-B873-DCE61994255B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RapidMeet.API", "RapidMeet.API\RapidMeet.API.csproj", "{B3265E38-2E27-47E5-B873-DCE61994255B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidMeetApp.Client", "RapidMeetApp.Client\RapidMeetApp.Client.csproj", "{78128CA0-B3DF-4039-A2CA-C1171C7050F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C75CD07F-6235-4C96-B56E-0D6EE85A95EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,15 @@ Global
 		{B3265E38-2E27-47E5-B873-DCE61994255B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3265E38-2E27-47E5-B873-DCE61994255B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3265E38-2E27-47E5-B873-DCE61994255B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78128CA0-B3DF-4039-A2CA-C1171C7050F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78128CA0-B3DF-4039-A2CA-C1171C7050F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78128CA0-B3DF-4039-A2CA-C1171C7050F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78128CA0-B3DF-4039-A2CA-C1171C7050F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D95814D6-693B-4463-AEE7-E6FC89115517}
 	EndGlobalSection
 EndGlobal
